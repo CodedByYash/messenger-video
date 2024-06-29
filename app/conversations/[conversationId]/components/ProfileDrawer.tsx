@@ -259,9 +259,9 @@ const ProfileDrawer: React.FC<ProfileDrawerProps> = ({
                                       sm:col-span-2
                                     "
                                   >
-                                    {data.users
-                                      .map((user) => user.email)
-                                      .join(", ")}
+                                    {data.users.map((user) => user.email)
+                                      .join` , `}{" "}
+                                    // Template literal
                                   </dd>
                                 </div>
                               )}
